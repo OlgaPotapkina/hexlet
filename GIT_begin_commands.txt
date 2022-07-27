@@ -1,0 +1,24 @@
+git version
+ssh-keygen -t ed25519 -C "olga_val_pot@mail.ru"
+ss
+ssh-add ~/.ssh/id_ed25519
+cat ~/.ssh/id_ed25519.pub
+mkdir hexlet-git
+cd hexlet-git
+git init
+git status
+echo 'Hello, Hexlet!' > readme.md
+echo 'Hackell Curry' > people.md
+git add readme.md
+git status
+git commit -m 'add md-files'
+git remote add origin git@github.com:OlgaPotapkina/hexlet-git.git
+git branch -M main
+git push -u origin main
+
+
+
+
+git config --global user.email "olga_val_pot@mail.ru"
+git config --global user.name "OlgaPotapkina"
+git commit -m 'add read.me'
